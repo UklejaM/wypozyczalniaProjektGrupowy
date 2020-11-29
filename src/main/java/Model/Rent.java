@@ -1,2 +1,9 @@
-package Model;public class Rent {
+package Model;
+
+public class Rent {
+
+    private
+
+
+
 }
