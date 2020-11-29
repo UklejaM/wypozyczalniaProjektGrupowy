@@ -4,60 +4,43 @@ package Model;
 import javax.persistence.*;
 
 @Entity
-@Table
 public class RentSpot {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
-    private String RentSpotName;
+    private Integer id;
+    private String rentSpotName;
     @Column(length = 3000)
     private String city;
     private String street;
-    private String HouseNo;
+    private String houseNo;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Sprzet_id")
-    private  Sprzet sprzet;
+    public RentSpot(Integer id, String rentSpotName, String city, String street, String houseNo, Gear sprzet) {
+        this.id = id;
+        this.rentSpotName = rentSpotName;
+        this.city = city;
+        this.street = street;
+        this.houseNo = houseNo;
+        this.sprzet = sprzet;
+    }
 
     public RentSpot() {
     }
 
-    public RentSpot(Integer id, String rentSpotName, String city, String street, String houseNo, Sprzet sprzet) {
-        Id = id;
-        RentSpotName = rentSpotName;
-        this.city = city;
-        this.street = street;
-        HouseNo = houseNo;
-        this.sprzet = sprzet;
-    }
-
-    @Override
-    public String toString() {
-        return "RentSpot{" +
-                "Id=" + Id +
-                ", RentSpotName='" + RentSpotName + '\'' +
-                ", city='" + city + '\'' +
-                ", street='" + street + '\'' +
-                ", HouseNo='" + HouseNo + '\'' +
-                ", sprzet=" + sprzet +
-                '}';
-    }
-
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getRentSpotName() {
-        return RentSpotName;
+        return rentSpotName;
     }
 
     public void setRentSpotName(String rentSpotName) {
-        RentSpotName = rentSpotName;
+        this.rentSpotName = rentSpotName;
     }
 
     public String getCity() {
@@ -77,18 +60,29 @@ public class RentSpot {
     }
 
     public String getHouseNo() {
-        return HouseNo;
+        return houseNo;
     }
 
     public void setHouseNo(String houseNo) {
-        HouseNo = houseNo;
+        this.houseNo = houseNo;
     }
 
-    public Sprzet getSprzet() {
+    public Gear getSprzet() {
         return sprzet;
     }
 
-    public void setSprzet(Sprzet sprzet) {
+    public void setSprzet(Gear sprzet) {
         this.sprzet = sprzet;
+    }
+
+    @Override
+    public String toString() {
+        return "RentSpot{" +
+                "id=" + id +
+                ", rentSpotName='" + rentSpotName + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", houseNo='" + houseNo + '\'' +
+                '}';
     }
 }
