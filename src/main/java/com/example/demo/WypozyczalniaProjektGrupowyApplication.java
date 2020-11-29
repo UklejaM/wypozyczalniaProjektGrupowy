@@ -14,10 +14,8 @@ public class WypozyczalniaProjektGrupowyApplication extends SpringBootServletIni
         return application.sources(WypozyczalniaProjektGrupowyApplication.class);
     }
 
-
     public static void main(String[] args) {
         SpringApplication.run(WypozyczalniaProjektGrupowyApplication.class, args);
     }
-
 
 }
