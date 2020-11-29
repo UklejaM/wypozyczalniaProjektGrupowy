@@ -68,11 +68,11 @@ public class RentSpot {
     }
 
     public Gear getSprzet() {
-        return sprzet;
+        return gear;
     }
 
     public void setSprzet(Gear sprzet) {
-        this.sprzet = sprzet;
+        this.gear = sprzet;
     }
 
     @Override
