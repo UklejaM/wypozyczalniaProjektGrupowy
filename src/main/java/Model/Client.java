@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Client {
 
-    String name;
-    String surname;
-    Date dateOfBirth;
-    Integer phoneNumber;
+    private String name;
+    private String surname;
+    private Date dateOfBirth;
+    private Integer phoneNumber;
 }
