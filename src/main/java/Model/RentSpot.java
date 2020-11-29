@@ -21,7 +21,7 @@ public class RentSpot {
         this.city = city;
         this.street = street;
         this.houseNo = houseNo;
-        this.sprzet = sprzet;
+        this.gear = sprzet;
     }
 
     public RentSpot() {
