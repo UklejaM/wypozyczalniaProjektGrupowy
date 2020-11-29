@@ -21,6 +21,21 @@ public class Client {
     private String clientMail;
     private String clientPassword;
 
+    public Client(Long id, String name, String surname, LocalDate dateOfBirth, Integer phoneNumber, String clientAddress, String idCardNumber, String clientMail, String clientPassword) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.dateOfBirth = dateOfBirth;
+        this.phoneNumber = phoneNumber;
+        this.clientAddress = clientAddress;
+        IdCardNumber = idCardNumber;
+        this.clientMail = clientMail;
+        this.clientPassword = clientPassword;
+    }
+
+    public Client() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -91,5 +106,20 @@ public class Client {
 
     public void setClientPassword(String clientPassword) {
         this.clientPassword = clientPassword;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", phoneNumber=" + phoneNumber +
+                ", clientAddress='" + clientAddress + '\'' +
+                ", IdCardNumber='" + IdCardNumber + '\'' +
+                ", clientMail='" + clientMail + '\'' +
+                ", clientPassword='" + clientPassword + '\'' +
+                '}';
     }
 }

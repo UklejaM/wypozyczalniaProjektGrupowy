@@ -2,6 +2,10 @@ package Model;
 
 
 import javax.persistence.*;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 @Entity
 public class RentSpot {
@@ -15,14 +19,16 @@ public class RentSpot {
     private String street;
     private String houseNo;
 
-    public RentSpot(Integer id, String rentSpotName, String city, String street, String houseNo, Gear sprzet) {
+    public RentSpot(Integer id, String rentSpotName, String city, String street, String houseNo) {
         this.id = id;
         this.rentSpotName = rentSpotName;
         this.city = city;
         this.street = street;
         this.houseNo = houseNo;
-        this.gear = sprzet;
+
     }
+
+
 
     public RentSpot() {
     }
@@ -67,13 +73,6 @@ public class RentSpot {
         this.houseNo = houseNo;
     }
 
-    public Gear getSprzet() {
-        return gear;
-    }
-
-    public void setSprzet(Gear sprzet) {
-        this.gear = sprzet;
-    }
 
     @Override
     public String toString() {
