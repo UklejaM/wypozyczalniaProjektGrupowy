@@ -11,6 +11,7 @@ public class Gear {
 
     @Id
     private Integer id;
+    @Enumerated(EnumType.STRING)
     private GearType type;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "RentSpot_id")
