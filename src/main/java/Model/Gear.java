@@ -11,12 +11,12 @@ public class Gear {
 
     @Id
     private Integer id;
-    private Enum<GearType> type;
+    private GearType type;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "RentSpot_id")
     private RentSpot rentSpot;
 
-    public Gear(Integer id, Enum<GearType> type, RentSpot rentSpot) {
+    public Gear(Integer id, GearType type, RentSpot rentSpot) {
         this.id = id;
         this.type = type;
         this.rentSpot = rentSpot;
@@ -33,11 +33,11 @@ public class Gear {
         this.id = id;
     }
 
-    public Enum<GearType> getType() {
+    public GearType getType() {
         return type;
     }
 
-    public void setType(Enum<GearType> type) {
+    public void setType(GearType type) {
         this.type = type;
     }
 
