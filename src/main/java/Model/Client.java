@@ -16,7 +16,7 @@ public class Client {
     private LocalDate dateOfBirth;
     private Integer phoneNumber;
     private String clientAddress;
-    private String IdCardNumber;
+    private String idCardNumber;
     private String clientMail;
     private String clientPassword;
 
@@ -27,7 +27,7 @@ public class Client {
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
         this.clientAddress = clientAddress;
-        IdCardNumber = idCardNumber;
+        this.idCardNumber = idCardNumber;
         this.clientMail = clientMail;
         this.clientPassword = clientPassword;
     }
@@ -84,11 +84,11 @@ public class Client {
     }
 
     public String getIdCardNumber() {
-        return IdCardNumber;
+        return idCardNumber;
     }
 
     public void setIdCardNumber(String idCardNumber) {
-        IdCardNumber = idCardNumber;
+        this.idCardNumber = idCardNumber;
     }
 
     public String getClientMail() {
@@ -116,7 +116,7 @@ public class Client {
                 ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber=" + phoneNumber +
                 ", clientAddress='" + clientAddress + '\'' +
-                ", IdCardNumber='" + IdCardNumber + '\'' +
+                ", idCardNumber='" + idCardNumber + '\'' +
                 ", clientMail='" + clientMail + '\'' +
                 ", clientPassword='" + clientPassword + '\'' +
                 '}';
