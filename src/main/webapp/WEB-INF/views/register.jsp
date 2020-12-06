@@ -11,10 +11,10 @@
         <title>Modern Business - Start Bootstrap Template</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/modern-business.css" rel="stylesheet">
+        <link href="../../resources/css/modern-business.css" rel="stylesheet">
 
     </head>
 
@@ -85,7 +85,7 @@
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Numer prawa jazdy:</label>
-                                <input type="text" class="form-control" id="lastname" required data-validation-required-message="Podaj numer prawa jazdy.">
+                                <input type="text" class="form-control" id="idCardNumber" required data-validation-required-message="Podaj numer prawa jazdy.">
                                 <p class="help-block"></p>
                             </div>
                         </div>
@@ -133,8 +133,8 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../resources/vendor/jquery/jquery.min.js"></script>
+        <script src="../../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Contact form JavaScript -->
         <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
