@@ -3,17 +3,16 @@ package Model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 
 
 public class Client {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String surname;
+    private String lastName;
     private LocalDate dateOfBirth;
     private Integer phoneNumber;
     private String clientAddress;
@@ -21,10 +20,10 @@ public class Client {
     private String clientMail;
     private String clientPassword;
 
-    public Client(Long id, String name, String surname, LocalDate dateOfBirth, Integer phoneNumber, String clientAddress, String idCardNumber, String clientMail, String clientPassword) {
+    public Client(Long id, String name, String lastName, LocalDate dateOfBirth, Integer phoneNumber, String clientAddress, String idCardNumber, String clientMail, String clientPassword) {
         this.id = id;
         this.name = name;
-        this.surname = surname;
+        this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
         this.clientAddress = clientAddress;
@@ -52,12 +51,12 @@ public class Client {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public LocalDate getDateOfBirth() {
@@ -113,7 +112,7 @@ public class Client {
         return "Client{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                ", surname='" + lastName + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber=" + phoneNumber +
                 ", clientAddress='" + clientAddress + '\'' +
