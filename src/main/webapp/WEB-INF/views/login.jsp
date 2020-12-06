@@ -47,58 +47,25 @@
         <div class="container">
 
             <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-4">Rejestracja</h1>
+            <h1 class="mt-4 mb-4">Logowanie</h1>
 
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
+                    <a href="#">Home</a>
                 </li>
-                <li class="breadcrumb-item active">Rejestracja</li>
+                <li class="breadcrumb-item active">Logowanie</li>
             </ol>
 
             <!-- Contact Form -->
             <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h3>Wypełnij formularz:</h3>
+                    <h3>Wpisz dane użytkownika:</h3>
                     <form name="sentMessage" id="contactForm" novalidate >
                         <div class="control-group form-group">
                             <div class="controls">
-                                <label>Imię:</label>
-                                <input type="text" class="form-control" id="name" required data-validation-required-message="Podaj imię.">
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Nazwisko:</label>
-                                <input type="text" class="form-control" id="lastname" required data-validation-required-message="Podaj nazwisko.">
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Data urodzenia:</label>
-                                <input type="date" class="form-control" id="dateOfBirth" required data-validation-required-message="Podaj datę urodzenia.">
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Numer prawa jazdy:</label>
-                                <input type="text" class="form-control" id="idCardNumber" required data-validation-required-message="Podaj numer prawa jazdy.">
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Numer telefonu:</label>
-                                <input type="tel" pattern="[0-9]{9}" maxlength="9"  class="form-control" id="phoneNumber" required data-validation-required-message="Podaj numer telefonu.">
-                            </div>
-                        </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Email Address:</label>
-                                <input type="email" class="form-control" id="clientMail" required data-validation-required-message="Please enter your email address.">
+                                <label>Adres Email:</label>
+                                <input type="email" class="form-control" id="clientMail" autofocus required data-validation-required-message="Please enter your email address.">
                             </div>
                         </div>
                         <div class="control-group form-group">
@@ -107,15 +74,10 @@
                                 <input type="password" class="form-control" id="clientPassword" required data-validation-required-message="Wpisz hasło.">
                             </div>
                         </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Powtórz hasło:</label>
-                                <input type="password" class="form-control" id="clientPasswordReapeated" required data-validation-required-message="Wpisz hasło ponownie.">
-                            </div>
-                        </div>
                         <div id="success"></div>
                         <!-- For success/fail messages -->
-                        <button type="submit" class="btn btn-primary" id="sendMessageButton">Zarejestruj</button>
+                        <button type="submit" class="btn btn-primary" id="sendMessageButton">Zaloguj</button>
+                        <span class="psw">Nie pamiętasz <a href="forgottenPassword.jsp">hasła?</a></span>
                     </form>
                 </div>
             </div>
