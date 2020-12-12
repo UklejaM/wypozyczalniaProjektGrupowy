@@ -5,8 +5,6 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-
-
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
