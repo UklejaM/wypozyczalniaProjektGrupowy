@@ -19,17 +19,20 @@ public class Rent {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Client_id")
+    @JoinColumn(name = "client_id")
     private Client client;
 
-    public Rent() {
-    }
 
     public Rent(LocalDate dateOfRent, LocalDate dateOfReturn, Client client) {
         this.dateOfRent = dateOfRent;
         this.dateOfReturn = dateOfReturn;
         this.client = client;
     }
+
+    public Rent() {
+
+    }
+
 
     public Long getId() {
         return id;
