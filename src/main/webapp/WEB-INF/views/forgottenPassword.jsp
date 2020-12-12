@@ -1,3 +1,8 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<jsp:useBean id="now" class="java.util.Date"/>
+<%@ page contentType="text/html; charset=UTF-8" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,20 +28,20 @@
         <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Wypożyczalnia JavaPoz21</a>
+                <a class="navbar-brand" href='<c:url value="/index"/>'>Wypożyczalnia JavaPoz21</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.jsp">Zaloguj</a>
+                            <a class="nav-link" href='<c:url value="/login"/>'>Zaloguj</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.jsp">Rejestracja</a>
+                            <a class="nav-link" href='<c:url value="/register"/>'>Rejestracja</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Kontakt</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href='<c:url value="/contact"/>'>Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +56,7 @@
 
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="#">Home</a>
+                    <a href='<c:url value="/index"/>'>Home</a>
                 </li>
                 <li class="breadcrumb-item active">Odzyskiwanie hasła</li>
             </ol>

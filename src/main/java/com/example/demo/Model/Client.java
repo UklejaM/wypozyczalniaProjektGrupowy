@@ -1,12 +1,10 @@
-package Model;
+package com.example.demo.Model;
 
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-
-
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

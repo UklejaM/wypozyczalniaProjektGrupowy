@@ -1,10 +1,6 @@
-package Model;
+package com.example.demo.Model;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 
 @Entity
 public class Gear {
@@ -14,7 +10,7 @@ public class Gear {
     @Enumerated(EnumType.STRING)
     private GearType type;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "RentSpot_id")
+    @JoinColumn(name = "rent_spot_id")
     private RentSpot rentSpot;
 
     public Gear(Integer id, GearType type, RentSpot rentSpot) {
