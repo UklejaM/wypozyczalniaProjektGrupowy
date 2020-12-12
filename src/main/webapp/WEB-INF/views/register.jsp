@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <h3>Wypełnij formularz:</h3>
-                    <form name="sentMessage" id="contactForm" novalidate >
+                    <form class ="user" name="registerForm" id="registerForm" novalidate >
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Imię:</label>
