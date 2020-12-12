@@ -10,7 +10,7 @@ public class Gear {
     @Enumerated(EnumType.STRING)
     private GearType type;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "RentSpot_id")
+    @JoinColumn(name = "rent_spot_id")
     private RentSpot rentSpot;
 
     public Gear(Integer id, GearType type, RentSpot rentSpot) {
