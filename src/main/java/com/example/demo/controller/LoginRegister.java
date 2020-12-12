@@ -16,4 +16,9 @@ public class LoginRegister {
     public String register() {
         return "register";
     }
+
+    @RequestMapping(value = {"/forgottenPassword"}, method = RequestMethod.GET)
+    public String forgottenPassword() {
+        return "forgottenPassword";
+    }
 }
