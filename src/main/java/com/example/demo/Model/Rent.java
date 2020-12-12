@@ -19,7 +19,7 @@ public class Rent {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Client_id")
+    @JoinColumn(name = "client_id")
     private Client client;
 
     public Rent() {

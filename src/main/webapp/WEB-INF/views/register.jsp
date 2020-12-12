@@ -66,56 +66,56 @@
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <h3>Wypełnij formularz:</h3>
-                    <form class ="user" name="registerForm" id="registerForm" novalidate >
+                    <form class ="user" method="post" action="/register" name="registerForm" id="registerForm" novalidate >
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Imię:</label>
-                                <input type="text" class="form-control" id="name" required data-validation-required-message="Podaj imię.">
+                                <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Podaj imię.">
                                 <p class="help-block"></p>
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Nazwisko:</label>
-                                <input type="text" class="form-control" id="lastname" required data-validation-required-message="Podaj nazwisko.">
+                                <input type="text" class="form-control" id="lastName" name="lastName" required data-validation-required-message="Podaj nazwisko.">
                                 <p class="help-block"></p>
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Data urodzenia:</label>
-                                <input type="date" class="form-control" id="dateOfBirth" required data-validation-required-message="Podaj datę urodzenia.">
+                                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required data-validation-required-message="Podaj datę urodzenia.">
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Numer prawa jazdy:</label>
-                                <input type="text" class="form-control" id="idCardNumber" required data-validation-required-message="Podaj numer prawa jazdy.">
+                                <input type="text" class="form-control" id="idCardNumber" name="idCardNumber" required data-validation-required-message="Podaj numer prawa jazdy.">
                                 <p class="help-block"></p>
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Numer telefonu:</label>
-                                <input type="tel" pattern="[0-9]{9}" maxlength="9"  class="form-control" id="phoneNumber" required data-validation-required-message="Podaj numer telefonu.">
+                                <input type="tel" pattern="[0-9]{9}" maxlength="9"  class="form-control" id="phoneNumber" name="phoneNumber" required data-validation-required-message="Podaj numer telefonu.">
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Email Address:</label>
-                                <input type="email" class="form-control" id="clientMail" required data-validation-required-message="Please enter your email address.">
+                                <input type="email" class="form-control" id="clientMail" name="clientMail" required data-validation-required-message="Please enter your email address.">
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Hasło:</label>
-                                <input type="password" class="form-control" id="clientPassword" required data-validation-required-message="Wpisz hasło.">
+                                <input type="password" class="form-control" id="clientPassword" name="clientPassword" required data-validation-required-message="Wpisz hasło.">
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Powtórz hasło:</label>
-                                <input type="password" class="form-control" id="clientPasswordReapeated" required data-validation-required-message="Wpisz hasło ponownie.">
+                                <input type="password" class="form-control" id="clientPasswordReapeated" name="clientPasswordReapeated" required data-validation-required-message="Wpisz hasło ponownie.">
                             </div>
                         </div>
                         <div id="success"></div>

@@ -1,8 +1,11 @@
 package com.example.demo.Model;
 
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 public class Client {
@@ -11,6 +14,7 @@ public class Client {
     private Long id;
     private String name;
     private String lastName;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dateOfBirth;
     private Integer phoneNumber;
     private String clientAddress;

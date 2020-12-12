@@ -7,11 +7,4 @@ import java.util.List;
 
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-    List<Client> findAll();
-
-    Client save(Client entity);
-
-    void delete(Long aLong);
-
-//    Client findById(Long id);
 }
