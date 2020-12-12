@@ -1,15 +1,12 @@
-package Model;
+package com.example.demo.Model;
 
-import org.springframework.data.annotation.Id;
+
 import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 @Entity
-
 public class Rent {
 
     @Id
@@ -22,7 +19,7 @@ public class Rent {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Client_id")
+    @JoinColumn(name = "client_id")
     private Client client;
 
     public Rent() {
